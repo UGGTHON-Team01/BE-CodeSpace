@@ -11,7 +11,7 @@ import io.swagger.v3.oas.models.servers.Server;
 
 // Swagger 접속 주소
 // http://localhost:8080/swagger-ui/index.html#/
-// https://16.171.3.150:8080/swagger-ui/index.html
+// https://13.60.84.223:8080/swagger-ui/index.html
 
 @Configuration
 public class SwaggerConfig {
@@ -26,7 +26,7 @@ public class SwaggerConfig {
     localServer.setDescription("Local Server");
 
     Server prodServer = new Server();
-    prodServer.setUrl("https://16.171.3.150:8080/swagger-ui/index.html");
+    prodServer.setUrl("https://13.60.84.223:8080/swagger-ui/index.html");
     prodServer.setDescription("Production Server");
 
     return new OpenAPI()
