@@ -26,7 +26,7 @@ public class SwaggerConfig {
     localServer.setDescription("Local Server");
 
     Server prodServer = new Server();
-    prodServer.setUrl("http://51.20.37.106:8080/swagger-ui/index.html");
+    prodServer.setUrl("http://54.180.121.231:8080/swagger-ui/index.html");
     prodServer.setDescription("Production Server");
 
     return new OpenAPI()
