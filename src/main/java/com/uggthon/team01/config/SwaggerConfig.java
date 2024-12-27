@@ -11,7 +11,7 @@ import io.swagger.v3.oas.models.servers.Server;
 
 // Swagger 접속 주소
 // http://localhost:8080/swagger-ui/index.html#/
-// https://{ip-address}:8080/swagger-ui/index.html
+// https://16.171.3.150:8080/swagger-ui/index.html
 
 @Configuration
 public class SwaggerConfig {
