@@ -59,7 +59,7 @@ public class S3Service {
     File uploadFile = convert(multipartFile);
     String uploadImageUrl = putS3(uploadFile, fileName);
     removeNewFile(uploadFile);
-    return uploadImageUrl;
+    return uuid;
   }
 
   private File convert(MultipartFile file) throws IOException {

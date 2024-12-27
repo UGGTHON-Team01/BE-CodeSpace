@@ -8,6 +8,6 @@ import lombok.Data;
 public class GenerateRequestDto {
   private List<String> scenario1;
   private List<String> scenario2;
-  private Long scenario3; // img아이디
-  private List<Long> scenario4;
+  private String scenario3; // img아이디
+  private List<String> scenario4;
 }
