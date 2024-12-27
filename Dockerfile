@@ -1,5 +1,5 @@
-# JDK21
-FROM openjdk:21
+# JDK17
+FROM openjdk:17
 
 # 인자 설정, jar 파일 복제
 COPY build/libs/*.jar app.jar
