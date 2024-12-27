@@ -1,7 +1,8 @@
-package com.uggthon.team01.domain.entity;
+package com.uggthon.team01.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,8 +15,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class Image {
 
-    @Id
-    private String id;
+  @Id private String id;
 
-    private String url;
+  private String url;
 }
