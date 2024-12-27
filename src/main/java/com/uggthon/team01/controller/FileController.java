@@ -1,5 +1,6 @@
 package com.uggthon.team01.controller;
 
+import com.uggthon.team01.service.S3Service;
 import java.io.IOException;
 
 import org.springframework.http.ResponseEntity;
@@ -18,13 +19,13 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/api")
 public class FileController {
 
-  private final FileService fileService;
+  private final S3Service s3Service;
   private final AIService aiService;
 
   @PostMapping("/file")
   public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file)
       throws IOException {
-    String imageId = fileService.uploadFile(file);
+    String imageId = s3Service.upload(file, file.getName());
     return ResponseEntity.ok(imageId);
   }
 
